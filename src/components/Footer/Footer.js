@@ -50,7 +50,7 @@ const Footer = () => {
         <p>Subscribe our newsletter</p>
         <div className="newsletter">
             <input type="email" placeholder='Enter your email' />
-            <span><i class="ri-send-plane-fill"></i></span>
+            <span><i className="ri-send-plane-fill"></i></span>
         </div>
         </Col>
     </Row>
@@ -61,9 +61,9 @@ const Footer = () => {
         <Col lg="6" md="6">
             <div className="social_link d-flex align-items-center justify-content-end gap-4 ">
                 <p className='m-0'>Follow: </p>
-                <span><Link to="https://www.facebook.com/progshahidul"> <i class="ri-facebook-line "></i></Link> </span>
-                <span><Link to="https://github.com/shahidul7150"> <i class="ri-github-line"></i></Link> </span>
-                <span><Link to="https://www.linkedin.com/in/progshahidul/"> <i class="ri-linkedin-line"></i></Link> </span>
+                <span><Link to="https://www.facebook.com/progshahidul"> <i className="ri-facebook-line "></i></Link> </span>
+                <span><Link to="https://github.com/shahidul7150"> <i className="ri-github-line"></i></Link> </span>
+                <span><Link to="https://www.linkedin.com/in/progshahidul/"> <i className="ri-linkedin-line"></i></Link> </span>
             </div>
         </Col>
     </Row>
