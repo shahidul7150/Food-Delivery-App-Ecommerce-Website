@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import heroImg from "../assets/images/hero.png";
 import Helmet from "../components/Helmet/Helmet";
+import Category from "../components/UI/category/Category";
 import "../styles/hero_section.css";
+import "../styles/home.css";
 const Home = () => {
   return (
     <Helmet title="Home">
+      <section>
       <Container>
         <Row>
           <Col lg="6" md="6">
@@ -52,6 +55,23 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
+      </section>
+      <section className="py-5">
+        <Category/>
+      </section>
+      <section className="py-5">
+        <Container>
+          <Row>
+            <Col lg="12" className="text-center">
+              <h5 className="feature_subtitle mb-4">What we serve</h5>
+              <h2 className="feature_title">Just sit back at home</h2>
+              <h2 className="feature_title">we will <span>take care</span></h2>
+              <p className="feature_text mb-1 mt-4 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, quisquam.</p>
+              <p className="feature_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, quisquam.</p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </Helmet>
   );
 };
