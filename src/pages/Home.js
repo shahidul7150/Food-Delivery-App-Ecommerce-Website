@@ -6,6 +6,28 @@ import Helmet from "../components/Helmet/Helmet";
 import Category from "../components/UI/category/Category";
 import "../styles/hero_section.css";
 import "../styles/home.css";
+
+import featureImg01 from '../assets/images/service-01.png';
+import featureImg02 from '../assets/images/service-02.png';
+import featureImg03 from '../assets/images/service-03.png';
+
+const featureData=[
+  {
+    title:'Quick Delivery',
+    imgUrl:featureImg01,
+    desc:'Lorem ipsum dolor,sit amet consetrtur adipicing elit minus doloremque'
+  },
+  {
+    title:'Super dine In',
+    imgUrl:featureImg02,
+    desc:'Lorem ipsum dolor,sit amet consetrtur adipicing elit minus doloremque'
+  },
+  {
+    title:'Easy Pick Up',
+    imgUrl:featureImg03,
+    desc:'Lorem ipsum dolor,sit amet consetrtur adipicing elit minus doloremque'
+  },
+]
 const Home = () => {
   return (
     <Helmet title="Home">
@@ -69,6 +91,20 @@ const Home = () => {
               <p className="feature_text mb-1 mt-4 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, quisquam.</p>
               <p className="feature_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, quisquam.</p>
             </Col>
+
+
+{
+  featureData.map((item,index)=>(
+    <Col lg="4" md="4" key={index} className="mt-5">
+    <div className="feature_item text-center px-4 py-3">
+<img src={item.imgUrl} alt="feature-img" className="w-25 mb-3"/>
+<h5 className="fw-bold mb-3">{item.title}</h5>
+<p>{item.desc}</p>
+    </div>
+  </Col>
+  ))
+}
+           
           </Row>
         </Container>
       </section>
